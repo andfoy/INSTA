@@ -80,9 +80,6 @@ Usage example
 
 We are releasing part of our dataset together with publicly available preprocessed avatars from [NHA](https://github.com/philgras/neural-head-avatars), [NeRFace](https://github.com/gafniguy/4D-Facial-Avatars) and [IMAvatar](https://github.com/zhengyuf/IMavatar). Each participant whose data was recorded in this study provided written consent for its release by signing this [document](./documents/Consent_general_english_ncs_video.pdf). Access to those sequences can be requested via [Google Forms](https://docs.google.com/forms/d/e/1FAIpQLSecX-7Arzv_qVQWFdicNxcxmPmSQx46y6TxnBBN67m0hvkXiA/viewform?usp=sharing&ouid=114977764432146378365).
 
-The output of the training (**Record Video** in menu), including rendered frames, checkpoint, etc will be saved in the `./data/{actor}/experiments/{config}/debug`.
-After the specified number of max steps, the program will automatically either render frames using novel cameras (`All` option in GUI and `render_novel_trajectory` in config) or only the currently selected one in `Mode`, by default `Overlay\Test`.
-
 [Available avatars](https://drive.google.com/drive/folders/1LsVvr7PPwGlyK0qiTuDVUz4ihreHJgut?usp=sharing). Click the selected avatar to download the training dataset and the checkpoint. The avatars have to be placed in the `data` folder.
 <div align="center" dis>
     <table class="images" width="100%"  style="border:0px solid white; width:100%;">
@@ -104,6 +101,9 @@ After the specified number of max steps, the program will automatically either r
         </tr>
     </table>
 </div>
+
+The output of the training (**Record Video** in menu), including rendered frames, checkpoint, etc will be saved in the `./data/{actor}/experiments/{config}/debug`.
+After the specified number of max steps, the program will automatically either render frames using novel cameras (`All` option in GUI and `render_novel_trajectory` in config) or only the currently selected one in `Mode`, by default `Overlay\Test`.
 
 ### Dataset Generation
 
