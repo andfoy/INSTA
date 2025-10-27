@@ -52,7 +52,7 @@ def dump_flame(flame, frame_id, output):
 
 def dump_intrinsics(frame):
     data = {}
-    payload = torch.load(frame)
+    payload = torch.load(frame, weights_only=False)
 
     # Intrinsic
     h = payload['img_size'][0]
