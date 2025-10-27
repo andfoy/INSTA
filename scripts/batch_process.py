@@ -16,6 +16,5 @@ if __name__ == '__main__':
                 "bash", "generate.sh", osp.join(root, dir),
                 osp.join(root, dir, "INSTA"), "10"])
             ret.check_returncode()
-            os.rename(osp.join(root, dir, "images"), osp.join(root, dir, "images_tracker"))
-            os.rename(osp.join(root, dir, "INSTA", "images"), osp.join(root, dir, "images"))
+            os.rename(osp.join(root, dir, "checkpoint"), osp.join(root, dir, "INSTA", "checkpoint"))
         break
