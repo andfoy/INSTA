@@ -3,7 +3,6 @@ COLOR='\033[0;32m'
 
 echo -e "\n${COLOR}Installing dependencies..."
 
-conda env create -f environment.yml
 
 echo -e "\n${COLOR}RobustVideoMatting..."
 mkdir -p dependencies
