@@ -12,6 +12,10 @@ if __name__ == '__main__':
         for dir in dirs:
             if dir[0] == '.':
                 continue
-            subprocess.run(["bash", "generate.sh", osp.join(root, dir),
-                            osp.join(root, dir, "INSTA"), "10"])
+            ret = subprocess.run([
+                "bash", "generate.sh", osp.join(root, dir),
+                osp.join(root, dir, "INSTA"), "10"])
+            ret.check_returncode()
+            os.rename(osp.join(root, dir, "images"), osp.join(root, dir, "images_tracker"))
+            os.rename(osp.join(root, dir, "INSTA", "images"), osp.join(root, dir, "images"))
         break
