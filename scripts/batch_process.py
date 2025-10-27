@@ -14,3 +14,4 @@ if __name__ == '__main__':
                 continue
             subprocess.run(["bash", "generate.sh", osp.join(root, dir),
                             osp.join(root, dir, "INSTA"), "10"])
+        break
