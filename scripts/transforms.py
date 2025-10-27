@@ -94,7 +94,7 @@ def create_input_images(src, dst):
 
 def dump_frame(payload):
     frame, src, output = payload
-    payload = torch.load(frame)
+    payload = torch.load(frame, weights_only=False)
     frame_id = payload['frame_id']
     mesh_path = frame.replace('.frame', '.ply').replace(checkpoint, 'mesh')
     if not os.path.exists(mesh_path):
