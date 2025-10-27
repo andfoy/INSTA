@@ -13,4 +13,4 @@ if __name__ == '__main__':
             if dir[0] == '.':
                 continue
             subprocess.run(["bash", "generate.sh", osp.join(root, dir),
-                            osp.join(root, dir, "INSTA"), 10])
+                            osp.join(root, dir, "INSTA"), "10"])
