@@ -14,8 +14,6 @@ if [ -n "$1" ]; then INPUT=${1}; fi
 if [ -n "$2" ]; then OUTPUT=${2}; fi
 if [ -n "$3" ]; then TEST_FRAMES=${3}; fi
 
-conda activate rta
-
 echo "Generate insta transform file"
 python transforms.py -i ${INPUT} -o ${OUTPUT} -t ${TEST_FRAMES}
 
